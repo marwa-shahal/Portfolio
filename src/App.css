@@ -2,13 +2,15 @@
 
 :root {
   --primary-white:#fff;
-  --primary-orange:#f9ab00;
+  --primary-pink: #FFCB9A;
   --primary-dark:rgba(255,255,255,0);
+  --primary-red: #5A0000;
+  --primary-hover-red:#f33501;
 }
 body{
   font-family:"Roboto Condesed" sans-serif;
 }
-/**navbar**/
+/**NAVBAR**/
 .logo{
   width:3rem;
 }
@@ -31,14 +33,247 @@ nav ul li {
   border-top:0.1875rem solid var(--primary-dark)
 }
 
-.navbar-brand{
-  max-width:17.25rem;
-  padding:0 i !important;
-  height:6rem i !important;
-}
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus{
-  border-top:0.1875rem solid var(--primary-orange) !important ;
+  border-bottom:0.1875rem solid var(--primary-pink) !important ;
 }
 .navbar-nav > li > a:hover {
-   border-top:0.1875rem solid var(--primary-orange) !important ;
+   border-bottom:0.1875rem solid var(--primary-pink) !important ;
 }
+
+nav{
+  z-index:2;
+}
+#navbar{
+  position:fixed;
+  width:100%;
+  top:0;
+}
+
+/** HEADER **/
+.header-wraper{
+  position:relative;
+  /* background:url("https://coolbackgrounds.io/images/backgrounds/black/pure-black-background-f82588d3.jpg") no-repeat; */
+  background-color:  #5A0000 ;
+  height:100vh;
+}
+
+.main-info {
+  display:flex;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  font-family:"Roboto Condesed", sans-serif;
+  margin-left:7rem;
+  line-height:4rem;
+  max-width: 60vw;
+  z-index:1;
+}
+
+.main-info > h1 {
+  color:var(--primary-white);
+  
+  font-size:3rem;
+}
+
+.main-info > h2 {
+  color:var(--primary-white);
+  font-size:1.5rem;
+  line-height:4rem;
+}
+
+.main-info-btn{
+  text-transform: uppercase;
+  font-family:"Roboto Condesed", sans-serif; 
+  padding:0.75rem 1rem 0.75rem 1.2rem;
+  margin-top: 3rem;
+  max-width: 10rem;
+}
+.main-info-btn:hover{
+  color: var(--primary-red) !important;
+}
+
+
+@media(max-width:768px){
+ .main-info h1{
+   font-size: 0.5rem !important;
+ }
+ .main-info{
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-family:"Roboto Condesed", sans-serif;
+   margin:auto;
+   line-height:4rem;
+   max-width: 80vw;
+   z-index:1;
+ }
+}
+
+/** HEADER TYPED **/
+
+.typed-text {
+  font-size:2rem;
+  color:var(--primary-white);
+}
+
+
+@media(max-width:768px){
+  .main-info h1{
+    font-size: 1.7rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem !important;
+  }
+ }
+
+
+
+
+.contact-icon{
+  margin-right:0.5rem;
+}
+
+/** PARTICLES **/
+.tsparticles-canvas-el{
+  position:absolute;
+  height:100vh;
+  width:100vw;
+  z-index:1;
+}
+
+/** ABOUT ME **/
+.bio-wraper{
+  margin-right:12rem;
+  margin-left:12rem ;
+  /* margin-top:3rem; */
+  font-family:"Roboto Condesed", sans-serif;
+}
+
+.bio-info h1{
+  text-align: center;
+  color:var(--primary-red);
+  font-family:"Roboto Condesed" sans-serif; 
+  font-family: medium;
+  padding-top:3rem;
+  padding-bottom:3rem;
+ 
+}
+.bio-info p{
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+
+@media(max-width:768px){
+  .bio-wraper{
+    margin:3rem;
+  }
+.bio-info h1{
+  padding-top:0rem;
+  padding-bottom:1rem;
+}
+  .bio-info p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+ }
+
+/** PROJECTS **/
+
+.project-title {
+  text-align: center;
+  color:var(--primary-red);
+  font-family:"Roboto Condesed" sans-serif; 
+  font-family: medium;
+  padding-top:3rem;
+  padding-bottom:3rem;
+  
+} 
+
+.card{
+  font-family:"Roboto Condesed" sans-serif; 
+  margin-bottom:3rem !important;
+}
+
+.card:hover{
+transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+@media(max-width:768px){
+.card{
+  margin: auto;
+}
+} 
+/**technologies**/
+.technologies{
+  background:transparent;
+}
+
+.technologies-title{
+  text-align: center;
+  color:var(--primary-red);
+  font-family:"Roboto Condesed" sans-serif; 
+  font-family: medium;
+  margin-bottom: 3rem;
+}
+
+.techno-card{
+  background-color: rgba(245, 245, 245, 0.4);;
+  opacity: .4;
+}
+
+ .icon{
+  /* border:1px solid black;
+  border-radius: 100%; */
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.jumbotron{
+  background-color: #FFCB9A  !important;
+}
+
+/**CONTACT ME**/
+
+.contact-me{
+  position:relative;
+  background-color:  #5A0000 ;
+  height:100vh;
+}
+.contact-title{
+  color:var(--primary-pink);
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family:"Roboto Condesed" sans-serif; 
+  font-family: medium;
+}
+
+.contact-btn{
+  text-transform: uppercase;
+  padding:0.75rem 1rem 0.75rem 1.2rem;
+  color: var(--primary-pink) !important;
+  margin-top: 3rem;
+  max-width: 10rem;
+}
+
+.contact-btn:hover{
+  color: var(--primary-red) !important;
+}
+.form-group{
+  width:60vw;
+  margin:auto;
+  font-family:"Roboto Condesed" sans-serif; 
+  color:var(--primary-pink);
+}
+.form-group:focus{ 
+  color:var(--primary-pink);
+}
+
+
