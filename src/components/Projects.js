@@ -22,8 +22,8 @@ const Projects = () => {
               <p className="card-text">An app that provides a platform to connect people who have plenty to share with those in need.</p>
             </div>
             <div className="card-footer">
-              <a href="#" className="btn rounded"><FaGithub /></a>
-              <a href="#" className="btn rounded"><FaLink /></a>
+              <a className="btn rounded" href="#" ><FaGithub /></a>
+              <a className="btn rounded" href="#"><FaLink /></a>
             </div>
 
           </div>
@@ -37,8 +37,8 @@ const Projects = () => {
               <p className="card-text">Online searchable source for movies information including rating cast, trailer and actress info.</p>
             </div>
             <div className="card-footer">
-              <a href="#" className="btn rounded"><FaGithub /></a>
-              <a href="#" className="btn rounded"><FaLink /></a>
+              <a className="btn rounded" href="https://github.com/marwa-shahal/MoviesHub"  target="_blank" ><FaGithub /></a>
+              <a className="btn rounded" href="#" ><FaLink /></a>
 
             </div>
           </div>

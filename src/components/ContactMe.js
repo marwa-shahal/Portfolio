@@ -31,24 +31,24 @@ const ContactMe = () => {
         <form onSubmit={sendEmail}>
           <div className="form-group">
             <label for="exampleFormControlInput1">Full Name</label>
-            <input type="name" name="name" className="form-control" id="exampleFormControlInput1" />
+            <input type="name" name="name" className="form-control" id="exampleFormControlInput1" required />
           </div>
           <div className="form-group">
             <label for="exampleFormControlInput1">Email address</label>
-            <input type="email"  name="email" className="form-control" id="exampleFormControlInput1" />
+            <input type="email"  name="email" className="form-control" id="exampleFormControlInput1" required />
           </div>
 
           <div className="form-group">
             <label for="exampleFormControlInput1">subject</label>
-            <input type="subject"  name="subject" className="form-control" id="exampleFormControlInput1" />
+            <input type="subject"  name="subject" className="form-control" id="exampleFormControlInput1" required />
           </div>
 
           <div className="form-group">
             <label for="exampleFormControlTextarea1">message</label>
-            <textarea className="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <textarea className="form-control" name="message" id="exampleFormControlTextarea1" rows="3" required ></textarea>
           </div>
-          <div className="form-group">
-            <button className="contact-btn btn btn-outline-light" type="submit" style={{ maxWidth: "15rem", marginTop: "2rem", paddingTop: "1rem", paddingBottom: "1rem" }} >Send Message</button>
+          <div className="form-group contact-btn">
+            <button className=" btn btn-outline-light" type="submit" style={{ maxWidth: "15rem", marginTop: "2rem", paddingTop: "1rem", paddingBottom: "1rem" }} >Send Message</button>
           </div>
         </form>
       </div>

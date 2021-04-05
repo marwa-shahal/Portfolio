@@ -66,7 +66,7 @@ const Navbar = () => {
                 smooth={true}
                 durartion={500}
                 spy={true}
-                exact='true' offset={-50}
+                exact='true' offset={-45}
               >
                 contacts
         </Link >
